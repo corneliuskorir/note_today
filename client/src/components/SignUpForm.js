@@ -12,7 +12,7 @@ function SignUpForm({ onLogin }) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/signup", {
+    fetch("api/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -20,12 +20,12 @@ function SignUpForm({ onLogin }) {
       body: JSON.stringify({
         username,
         password,
-        password_confirmation: passwordConfirmation
+        password_confirmation: passwordConfirmation,
       }),
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then(({token, user}) => onLogin(token, user));
+        r.json().then(({ token, user }) => onLogin(token, user));
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
