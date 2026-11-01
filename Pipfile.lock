@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a97b60f95a5763ec4744d0532a806dee057fb9936b6ebdbb5f9acb377c06f559"
+            "sha256": "0d3f0f24ba600cd9497f402f4eccecd0d241bf53fb5cd3c2d5af6c6826647fdf"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -141,6 +141,24 @@
             ],
             "index": "pypi",
             "version": "==1.0.1"
+        },
+        "flask-cors": {
+            "hashes": [
+                "sha256:30c5031552cd59f620ac0c8211dac45b345d3b2df310e7721879e4f46ef9c601",
+                "sha256:68fcf75693e961f3af26683b23c4b9a8fb6b64de17d20d0c37b95e8de7ab2ed8"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.9' and python_version < '4.0'",
+            "version": "==6.0.5"
+        },
+        "flask-jwt-extended": {
+            "hashes": [
+                "sha256:78fd0f460317facf3a0084a6457ffaf2f1dda9eefbd576f94cea35b0eadd5531",
+                "sha256:daad1981117f4972d63c363d013f290de307aad781a935921b603b714817393c"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10' and python_version < '4'",
+            "version": "==4.7.4"
         },
         "flask-migrate": {
             "hashes": [
@@ -357,6 +375,14 @@
             "index": "pypi",
             "markers": "python_version >= '3.10'",
             "version": "==4.3.1"
+        },
+        "pyjwt": {
+            "hashes": [
+                "sha256:42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+                "sha256:4f259e80cdfb6b3fc18a7de51fd1ef9ec79652f25019bae68975ca2468a34df8"
+            ],
+            "markers": "python_version >= '3.9'",
+            "version": "==2.15.1"
         },
         "pytz": {
             "hashes": [
