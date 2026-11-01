@@ -6,6 +6,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    console.log(localStorage.getItem("token"));
     fetch("api/me", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
