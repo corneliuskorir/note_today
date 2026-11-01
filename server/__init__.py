@@ -3,6 +3,7 @@ from flask_migrate import Migrate
 
 from .config import db, init_Dependencies
 from .models import *
+from .schemas import *
 
 
 def create_app():
