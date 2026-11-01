@@ -1,7 +1,9 @@
 from flask import Flask
 from flask_migrate import Migrate
 
-from .config import db, init_Api
+from .config import db, init_Dependencies
+from .models import *
+from .schemas import *
 
 
 def create_app():
@@ -13,6 +15,6 @@ def create_app():
 
     migrate = Migrate(app, db)
     db.init_app(app)
-    init_Api(app=app)
+    init_Dependencies(app=app)
 
     return app
