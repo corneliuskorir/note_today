@@ -9,9 +9,7 @@ class User(db.Model):
     username = db.Column(db.String, unique=True, nullable=False)
     _password_hash = db.Column(db.String)
 
-    entries = db.relationship(
-        "Entry", back_populates="entries.id", cascade="all,delete"
-    )
+    entries = db.relationship("Entry", back_populates="user", cascade="all,delete")
 
     @hybrid_property
     def password_hash(self):
